@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="if else encadeado.">
+    <meta name="keywords" content="Java,JS,script">
+    <meta name="author" content="Felipe Manzano">
+    <script src="../script/script23.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>if else encadeado</title>
+</head>
+
+<body>
+
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <h1>if else encadeado</h1>
+        <h2>tempo</h2>
+        <p id="tempo"></p>
+        <p>Felipe Manzano</p>
+    </div>
+    <script>
+        const time = new Date().getHours();
+        let Tempo;
+        if (time < 10) {
+            Tempo = "Bom tarde!!";
+        } else if (time < 20) {
+            Tempo = "Bom dia!!";
+        } else {
+            Tempo = "Boa noite!!"
+        }
+        document.getElementById("tempo").innerHTML = Tempo;
+    </script>
+</body>
+
+</html>
